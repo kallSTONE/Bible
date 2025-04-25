@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>The Holy Bible</title>
+    <link rel="icon" href="assets/ancient-book-open-pages-removebg.ico" type="image/icon type">
+    <style>
+        
+        section{
+            padding: 60px 0px;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #424242;
+            color: white;
+            border:1px solid rgb(159, 119, 8);
+            box-shadow: rgba(255, 191, 0, 0.463) 0px 4px 5px 0px;
+        }
+        .accordion-button::after {
+            color: inherit; 
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            filter: brightness(0) invert(1); 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary"><i class="bi bi-book-half"></i> The Holy Bible - Book</span>  
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#topics">About the Book</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Reviews</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Get in touch</a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link" href="https://www.navigators.org/wp-content/uploads/2021/12/navigators-bible-reading-plan.pdf" target="_blank">Guides</a>
+                </li>
+
+              <li class="nav-item ms-2 d-none d-md-inline">
+                <a class="btn btn-secondary"href="#pricing">Get Now</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Main image and intro -->
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center"> 
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Holy Bible</div>
+                        <div class="display-5 text-muted">Your Ultimate Life Guide</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">The Bible is more than just a sacred book—it is a divine life guide. The Bible reveals God's heart and His plan for humanity, offering wisdom, correction, and hope. It teaches us how to live with purpose, righteousness, love others, and walk in faith!</p>
+                    <a href="#pricing" class="btn btn-lg btn-secondary">Read Now</a>
+                    <a href="#sidebar" role="button" data-bs-toggle="offcanvas" class="d-block mt-3" aria-controls="sidebar" >Explore Specific Books</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <!-- tool tip -->
+                    <span class="tt" data-bs-placement="bottom" title="The Holy Bible ">
+                        <img class="img-fluid" src="./assets/BibleImage-removebg.png" alt="bible">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light mt-5">
+        <h2 class="text-center">BibleRef</h2>
+        <p class="card-text d-none d-lg-block text-muted mx-5 text-center"> Many people avoid deeper Bible study because they are intimidated. They see the Bible itself as too big, too complex, or too obscure to understand. Many Bible commentaries are filled with slogans, religious jargon, and ten-dollar words. It is difficult for the common person to find a relatable commentary.
+            To counter this, BibleRef.com is built around three core principles. These are Biblical Authority, Accessibility, and Discipleship.
+        </p>
+    </section>
+
+    <!-- Pricing plan -->
+    <section id="pricing" class="bg-light mt-5">
+        <div class="container-lg ">
+            <div class="text-center">
+                <h2>Bible Commerntaries</h2>
+                <p class="lead text-muted">Choose a Commentary!</p>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">BibleRef</h4>
+                            <p class="lead card-subtitle">ebook read only</p>
+                            <p class="display-5 my-4 fw-bold" style="color: rgb(159, 119, 8);">$0.00</p>
+                            <p class="card-text d-none d-lg-block text-muted mx-5">A comprehensive, free, original, online commentary of the entire Bible.</p>
+                            <a href="https://www.bibleref.com/" class="btn btn-outline mt-3 btn-lg" style="border-color:  rgb(159, 119, 8);">Read Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-9 col-lg-4">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-5">
+                            <h4 class="card-title">Desiring God</h4>
+                            <p class="lead card-subtitle">ebook & Youtube</p>
+                            <p class="display-5 my-4 fw-bold" style="color: rgb(159, 119, 8);">$0.00</p>
+                            <p class="card-text d-none d-lg-block text-muted mx-5">We aim to help people everywhere embrace a profound truth that changes everything about life and eternity:</p>
+                            <a href="https://www.desiringgod.org/" class="btn btn-outline mt-3 btn-lg" style="border-color:  rgb(159, 119, 8);">Read Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">412Teens</h4>
+                            <p class="lead card-subtitle">ebook & YouTube</p>
+                            <p class="display-5 my-4 fw-bold" style="color: rgb(159, 119, 8);">$0.00</p>
+                            <p class="card-text d-none d-lg-block text-muted mx-5">Dedicated to encouraging teens and sharing pearls of biblical truth in a sea of spiritual sludge. </p>
+                            <a href="https://412teens.org/" target="_blank" class="btn btn-outline mt-3 btn-lg" style="border-color:  rgb(159, 119, 8);">Read Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <!-- topics at glace -->
+
+    <section id="topics">
+    <div class="container-md">
+        <div class="text-center">
+            <h2>Inside the book....</h2>
+            <p class="lead text-muted">A quick glance at the book.</p>
+            <p class="lead text-muted">More than a collection of ancient writings, the Bible offers a living message—guiding hearts, shaping lives, and revealing God's purpose through every page. It's a source of wisdom, strength, and direction for anyone seeking truth in a complex world.</p>
+        </div>
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+            <div class="col-6 col-lg-4">
+                <img src="./assets/ancient-book-open-pages-removebg.png" class="img-fluid" alt="ebook">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="ml-2" >Books of The Bible</h2>
+                <div class="accordion shadow" id="bibleAccordion">
+                    
+                    <!-- Old Testament -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOldTestament">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOldTestament" aria-expanded="false" aria-controls="collapseOldTestament">
+                                The Old Testament Bible (Hebrew Bible)
+                            </button>
+                        </h2>
+                        <div id="collapseOldTestament" class="accordion-collapse collapse" aria-labelledby="headingOldTestament" data-bs-parent="#bibleAccordion">
+                            <div class="accordion-body">
+                                <div class="accordion" id="oldTestamentCategories">
+                                   
+                                    <!-- Books of Law (Torah) -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTorah">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTorah" aria-expanded="false" aria-controls="collapseTorah">
+                                                The Books of Law (Torah)
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTorah" class="accordion-collapse collapse" aria-labelledby="headingTorah" data-bs-parent="#oldTestamentCategories">
+                                            <div class="accordion-body">
+                                                <p>Genesis, Exodus, Leviticus, Numbers, Deuteronomy</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Historical Books -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingHistorical">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHistorical" aria-expanded="false" aria-controls="collapseHistorical">
+                                                The Historical Books
+                                            </button>
+                                        </h2>
+                                        <div id="collapseHistorical" class="accordion-collapse collapse" aria-labelledby="headingHistorical" data-bs-parent="#oldTestamentCategories">
+                                            <div class="accordion-body">
+                                                <p>Joshua, Judges, Ruth, 1 Samuel, 2 Samuel, 1 Kings, 2 Kings, 1 Chronicles, 2 Chronicles, Ezra, Nehemiah, Esther</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Wisdom Books -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingWisdom">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWisdom" aria-expanded="false" aria-controls="collapseWisdom">
+                                                The Wisdom Books
+                                            </button>
+                                        </h2>
+                                        <div id="collapseWisdom" class="accordion-collapse collapse" aria-labelledby="headingWisdom" data-bs-parent="#oldTestamentCategories">
+                                            <div class="accordion-body">
+                                                <p>Job, Psalms, Proverbs, Ecclesiastes, Song of Solomon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Major Prophets -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingMajorProphets">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMajorProphets" aria-expanded="false" aria-controls="collapseMajorProphets">
+                                                The Major Prophets
+                                            </button>
+                                        </h2>
+                                        <div id="collapseMajorProphets" class="accordion-collapse collapse" aria-labelledby="headingMajorProphets" data-bs-parent="#oldTestamentCategories">
+                                            <div class="accordion-body">
+                                                <p>Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Minor Prophets -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingMinorProphets">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMinorProphets" aria-expanded="false" aria-controls="collapseMinorProphets">
+                                                The Minor Prophets
+                                            </button>
+                                        </h2>
+                                        <div id="collapseMinorProphets" class="accordion-collapse collapse" aria-labelledby="headingMinorProphets" data-bs-parent="#oldTestamentCategories">
+                                            <div class="accordion-body">
+                                                <p>Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- New Testament -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNewTestament">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNewTestament" aria-expanded="false" aria-controls="collapseNewTestament">
+                                The New Testament Bible
+                            </button>
+                        </h2>
+                        <div id="collapseNewTestament" class="accordion-collapse collapse" aria-labelledby="headingNewTestament" data-bs-parent="#bibleAccordion">
+                            <div class="accordion-body">
+                                <div class="accordion" id="newTestamentCategories">
+                                    
+                                    <!-- Gospels -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingGospels">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGospels" aria-expanded="false" aria-controls="collapseGospels">
+                                                The Gospels
+                                            </button>
+                                        </h2>
+                                        <div id="collapseGospels" class="accordion-collapse collapse" aria-labelledby="headingGospels" data-bs-parent="#newTestamentCategories">
+                                            <div class="accordion-body">
+                                                <p>Matthew, Mark, Luke, John</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Acts -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingActs">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseActs" aria-expanded="false" aria-controls="collapseActs">
+                                                The Acts of the Apostles
+                                            </button>
+                                        </h2>
+                                        <div id="collapseActs" class="accordion-collapse collapse" aria-labelledby="headingActs" data-bs-parent="#newTestamentCategories">
+                                            <div class="accordion-body">
+                                                <p>Acts</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Epistles -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingEpistles">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEpistles" aria-expanded="false" aria-controls="collapseEpistles">
+                                                The Epistles
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEpistles" class="accordion-collapse collapse" aria-labelledby="headingEpistles" data-bs-parent="#newTestamentCategories">
+                                            <div class="accordion-body">
+                                                <p>Romans, 1 Corinthians, 2 Corinthians, Galatians, Ephesians, Philippians, Colossians, 1 Thessalonians, 2 Thessalonians, 1 Timothy, 2 Timothy, Titus, Philemon, Hebrews, James, 1 Peter, 2 Peter, 1 John, 2 John, 3 John, Jude</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Revelation -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingRevelations">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRevelations" aria-expanded="false" aria-controls="collapseRevelations">
+                                                Apocalypse
+                                            </button>
+                                        </h2>
+                                        <div id="collapseRevelations" class="accordion-collapse collapse" aria-labelledby="headingRevelations" data-bs-parent="#newTestamentCategories">
+                                            <div class="accordion-body">
+                                                <p>The Book of Revelation (Apocalypse of John)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- reviews list -->
+    
+        <section id="reviews" class="bg-light">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2><i class="bi bi-stars"></i> Book Reviews</h2>
+                    <p class="lead">What people have said about the book, through time...</p>
+                </div>
+                <div class="row justify-content-center my-5">
+                    <div class="col-lg-8">
+                        <div class="list-group">
+                            <div class="list-group-item py-3">
+                                <div class="pb-">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h5 class="mb-1">A Fantastic Bible</h5>
+                                <p class="mb-1">Please never quit publishing the NET Bible! It is a fantastic Bible, one I trust and use constantly, and one I keep recommending over and over again.</p>
+                                <small>Review by Cassandra</small>
+                            </div>
+                            
+                            <div class="list-group-item py-3">
+                                <div class="pb-">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="mb-1">Easy to Use Bible App</h5>
+                                <p class="mb-1">I like to use the app to listen to the Scriptures. It is pretty easy to use and so far on my end there were no glitches or issues.</p>
+                                <small>Review by Kolya290</small>
+                            </div>
+                            
+                            <div class="list-group-item py-3">
+                                <div class="pb-">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h5 class="mb-1">Needs a Serious Rewrite</h5>
+                                <p class="mb-1">A fictional historical epic with elements of fantasy and the supernatural. A serious rewrite is needed if this is ever going to become at least a somewhat enjoyable read.</p>
+                                <small>Review by Teo</small>
+                            </div>
+                            
+                            <div class="list-group-item py-3">
+                                <div class="pb-">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                                <h5 class="mb-1">Great Resource but Recent Changes Concern Me</h5>
+                                <p class="mb-1">Since when is the unadulterated Word of God not sufficient? The addition of bracketed description 'enhancers' to daily Bible verses is concerning.</p>
+                                <small>Review by Marti Wittig</small>
+                            </div>
+                            
+                            <div class="list-group-item py-3">
+                                <div class="pb-">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h5 class="mb-1">Attention to Detail is Remarkable</h5>
+                                <p class="mb-1">Thank you for your attention to detail. I will share this with the brethren whom I fellowship with and who's mentoring God has placed my wife and I under.</p>
+                                <small>Review by Warren</small>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- contact form -->
+
+        <section id="contact">
+            <div class="container-lg">
+                <div class="text-center">
+                    <h2>Get in Touch</h2>
+                    <p class="lead">Question to ask? Fill out the form to contact us directly</p>
+                </div>
+
+                <div class="row justify-content-center my-5">
+                    <div class="col-lg-6">
+                        <form>
+                            <label for="email" class="form-label">Email Address:</label>
+                            <div class="mb-4 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-arrow-up-fill"></i>                                
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="eg@example.com">
+
+                                <span class="input-group-text">
+                                    <span class="tt" data-bs-placement="bottom" title="Enter your email address that we can reply to.">
+                                        <i class="bi bi-question-circle"></i>                      
+                                    </span>          
+                                </span>
+                            </div>
+
+
+                            <label for="name" class="form-label">Name:</label>
+                            <div class="mb-4 input-group">
+                                <span class="input-group-text"> 
+                                    <i i class="bi bi-person-fill"></i> 
+                                </span>
+                                <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            </div>
+                            <label for="subject" class="form-label">What is your question about?</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text">
+                                    <i class="bi bi-chat-right-dots-fill"></i>
+                                </span>
+                                <select class="form-select" id="subject">
+                                    <option value="Pricing" selected>Pricing Query</option>
+                                    <option value="Content" >Content Query</option>
+                                    <option value="Other" >Other Query</option>
+                                </select>
+                            </div>
+                            
+
+                            <div class="form-floating mb-4 mt-5">
+                                <textarea id="query" class="form-control" style="height:140px"></textarea>
+                                <label for="query" >    Your query...</label>
+
+                            </div>
+                            <div class="mb-4 text-center">
+                                <button type="submit" class="btn btn-secondary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Get updates modal trigger -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="text-center">
+                    <h2>Stay in the Loop</h2>
+                    <p class="lead">Get the latest updates as it happens...</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum blanditiis cum placeat. Odit placeat voluptas magni laborum eum aliquam, blanditiis cumque modi! Esse vel, rerum quae quam excepturi ullam laudantium dolores nulla aut totam minima ratione autem minus quidem.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for Updates</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Modal itself -->
+
+        <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Latest Updates</p>
+                        <label for="modal-email" class="form-label">your Email Address:</label>
+                        <input type="text" class="form-control" id="modal-email" placeholder="eg@gmail.com">
+                        
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="sidebar-label">Books of The Bible</h5>
+                 <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <p>The Bible is more than just a sacred book—it is a divine life guide. At its core, the Bible reveals God's heart and His plan for humanity, offering wisdom, encouragement, correction, and hope. It teaches us how to live with purpose, love others, pursue righteousness, and walk in faith through every season of life.</p>
+            
+            <!-- dropdown -->
+             <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown" > Choose a Book</button>
+                <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                    <li><a href="https://www.bibleref.com/Genesis/" target="_blank" class="dropdown-item">Book of Genesis</a></li>
+                    <li><a href="https://www.bibleref.com/Exodus/" target="_blank" class="dropdown-item">Book of Exodus</a></li> 
+                    <li><a href="https://www.bibleref.com/Leviticus/" target="_blank" class="dropdown-item">Book of Leviticus</a></li>
+                    <li><a href="https://www.bibleref.com/Genesis/" target="_blank" class="dropdown-item">Book of job</a></li>
+                </ul>
+             </div>
+
+            </div>
+        </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        const tooltips = document.querySelectorAll(".tt")
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html> 
